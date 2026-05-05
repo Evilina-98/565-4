@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Кружки и секции</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff9c4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #7B1FA2;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .clubs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .club-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #9C27B0;
+        }
+        .club-card:hover {
+            transform: translateY(-10px);
+        }
+        .club-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background: #eee;
+        }
+        h3 {
+            margin: 10px 0;
+            color: #4A148C;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 10px 25px;
+            background: #9C27B0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Наши кружки и спортивные секции</h1>
+
+    <div class="clubs-grid">
+        <!-- Секция 1 -->
+        <div class="club-card">
+            <img src="images/art.jpg" alt="Изостудия" class="club-img">
+            <h3>Изостудия</h3>
+            <p>Вт, Чт - 16:00</p>
+        </div>
+
+        <!-- Секция 2 -->
+        <div class="club-card">
+            <img src="images/gym.jpg" alt="Гимнастика" class="club-img">
+            <h3>Цирковая студия</h3>
+            <p>Ср - 17:00</p>
+        </div>
+
+        <!-- Секция 3 -->
+        <div class="club-card">
+            <img src="images/ball.jpg" alt="Футбол" class="club-img">
+            <h3>Футбол</h3>
+            <p>Пн, Пт - 18:00</p>
+        </div>
+
+        <!-- Секция 4 -->
+        <div class="club-card">
+            <img src="images/chess.jpg" alt="Шахматы" class="club-img">
+            <h3>Шахматный клуб</h3>
+            <p>Пн, Ср - 15:30</p>
+        </div>
+
+        <!-- Секция 5 -->
+        <div class="club-card">
+            <img src="images/dance.jpg" alt="Танцы" class="club-img">
+            <h3>Современные танцы</h3>
+            <p>Вт, Пт - 17:30</p>
+        </div>
+
+        <!-- Секция 6 -->
+        <div class="club-card">
+            <img src="images/robot.jpg" alt="Робототехника" class="club-img">
+            <h3>Робототехника</h3>
+            <p>Чт - 16:30</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">На главную</a>
+
+</body>
+</html>

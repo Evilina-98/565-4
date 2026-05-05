@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Наши учителя</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+        .intro-text {
+            font-style: italic;
+            color: #555;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .teacher-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #2196F3;
+        }
+        .teacher-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #e3f2fd;
+        }
+        h3 {
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+        .subject {
+            color: #2196F3;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            padding: 12px 25px;
+            background: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>Педагогический коллектив</h1>
+        <p class="intro-text">
+            Знакомьтесь с нашими наставниками - это учителя, достойные почетного места на нашей доске почета за их труд и преданность делу!
+        </p>
+    </div>
+
+    <div class="teachers-grid">
+        <div class="teacher-card">
+            <img src="images/teacher1.jpg" alt="Иванова И.И." class="teacher-img">
+            <h3>Иванова И.И.</h3>
+            <p class="subject">Математика</p>
+            <p>Стаж: 15 лет</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="images/teacher2.jpg" alt="Петрова П.П." class="teacher-img">
+            <h3>Петрова П.П.</h3>
+            <p class="subject">Литература</p>
+            <p>Стаж: 22 года</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="images/teacher3.jpg" alt="Сидоров С.С." class="teacher-img">
+            <h3>Сидоров С.С.</h3>
+            <p class="subject">Физика</p>
+            <p>Стаж: 10 лет</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">На главную</a>
+
+</body>
+</html>

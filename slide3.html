@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Расписание</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fcb69f;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        h2 {
+            color: #d35400;
+            margin-bottom: 5px;
+        }
+        .info-text {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-size: 14px;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 2px dashed #ff9800;
+            padding: 10px;
+            text-align: center;
+        }
+        .schedule-table th {
+            background: #ff9800;
+            color: white;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FF5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        tr:nth-child(even) {
+            background-color: #fff9f0;
+        }
+        .class-label {
+            font-weight: bold;
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Расписание уроков</h2>
+        <span class="info-text">
+            Обратите внимание: для каждого параллельного класса составлено индивидуальное расписание. 
+            Ниже представлен график занятий для <span class="class-label">9 "А" класса</span>.
+        </span>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:30 - 09:15</td>
+                    <td>Математика</td>
+                    <td>Литература</td>
+                    <td>История</td>
+                    <td>География</td>
+                    <td>Биология</td>
+                </tr>
+                <tr>
+                    <td>09:25 - 10:10</td>
+                    <td>Физика</td>
+                    <td>Английский</td>
+                    <td>Алгебра</td>
+                    <td>Физкультура</td>
+                    <td>Химия</td>
+                </tr>
+                <tr>
+                    <td>10:25 - 11:10</td>
+                    <td>Русский яз.</td>
+                    <td>Информатика</td>
+                    <td>Общество</td>
+                    <td>Английский</td>
+                    <td>Геометрия</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:15</td>
+                    <td>Искусство</td>
+                    <td>ОБЖ</td>
+                    <td>Физкультура</td>
+                    <td>Технология</td>
+                    <td>Литература</td>
+                </tr>
+                <tr>
+                    <td>12:35 - 13:20</td>
+                    <td>Внеурочка</td>
+                    <td>Проект</td>
+                    <td>Музыка</td>
+                    <td>-</td>
+                    <td>Классный час</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Галерея событий</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .gallery-item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            background: #ddd;
+        }
+        .gallery-item p {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Фотогалерея мероприятий</h1>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/foto1.jpg" alt="1 сентября">
+            <p>День знаний</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto2.jpg" alt="День учителя">
+            <p>День учителя</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto3.jpg" alt="Осенний бал">
+            <p>Осенний бал</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto4.jpg" alt="Новый год">
+            <p>Новый год</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto5.jpg" alt="Последний звонок">
+            <p>Последний звонок</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto6.jpg" alt="Спорт">
+            <p>Спортивный праздник</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">На главную</a>
+</body>
+</html>

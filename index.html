@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Школа будущего</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        /* Стили для логотипа */
+        .logo {
+            width: 150px; /* Ширина логотипа */
+            height: auto;
+            margin: 10px auto;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .nav-button {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+        .nav-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #fff;
+            color: #667eea;
+        }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .logo {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Путь к картинке логотипа -->
+    <img src="images/logo.png" alt="Логотип школы" class="logo">
+    
+    <h1>Школа Будущего</h1>
+
+    <div class="nav-grid">
+        <a href="slide1.html" class="nav-button">О школе</a>
+        <a href="slide2.html" class="nav-button">Учителя</a>
+        <a href="slide3.html" class="nav-button">Расписание</a>
+        <a href="slide4.html" class="nav-button">Кружки</a>
+        <a href="slide5.html" class="nav-button">Мероприятия</a>
+        <a href="slide6.html" class="nav-button">Галерея</a>
+        <a href="slide7.html" class="nav-button">Новости</a>
+        <a href="slide8.html" class="nav-button">Контакты</a>
+        <a href="slide9.html" class="nav-button">Достижения</a>
+    </div>
+</body>
+</html>

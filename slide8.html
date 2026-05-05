@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Контакты и руководство</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #e3f2fd;
+            margin: 0;
+            padding: 20px;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .director-block {
+            display: flex;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .director-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+            background: #ddd;
+        }
+        .director-info h3 {
+            margin: 0 0 5px 0;
+            color: #00796b;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        .label-text {
+            width: 100px;
+            font-weight: bold;
+            color: #009688;
+        }
+        .school-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            background: #eee;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #009688;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #009688;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Руководство школы</h2>
+        
+        <div class="director-block">
+            <img src="images/director.jpg" alt="Директор" class="director-img">
+            <div class="director-info">
+                <h3>Иванова Марина Сергеевна</h3>
+                <p><strong>Директор школы</strong><br>
+                Почётный работник образования РФ. Стаж работы более 20 лет.</p>
+                <p>Приёмный день: Вторник с 14:00 до 17:00</p>
+            </div>
+        </div>
+
+        <h2>Контактные данные</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <span class="label-text">Адрес:</span>
+                <span>123456, г. Москва, ул. Школьная, д. 15 (Главный корпус)</span>
+            </div>
+            <div class="info-item">
+                <span class="label-text">Телефон:</span>
+                <span>Приёмная: +7 (495) 123-45-67<br>Вахта: +7 (495) 123-45-68</span>
+            </div>
+            <div class="info-item">
+                <span class="label-text">E-mail:</span>
+                <span>school_future@edu.mos.ru</span>
+            </div>
+            <div class="info-item">
+                <span class="label-text">График:</span>
+                <span>Понедельник - Пятница: 08:00 - 19:00<br>Суббота: 09:00 - 14:00</span>
+            </div>
+        </div>
+
+        <img src="images/school_view.jpg" alt="Вид на школу" class="school-img">
+        
+        <p><strong>Как добраться:</strong> Автобусы №102, №45 до остановки «Школа будущего».</p>
+        
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+</body>
+</html>
