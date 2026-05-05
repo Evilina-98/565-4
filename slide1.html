@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta charset="UTF-8">
-
-    <title>Î øêîëå</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Школа будущего</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
             padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #2c5aa0;
             text-align: center;
+            min-height: 100vh;
         }
-        p {
-            line-height: 1.6;
-            text-align: justify;
+        .logo {
+            width: 150px;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
         }
-        .back-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #4CAF50;
-            color: white;
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .nav-button {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
             text-decoration: none;
-            border-radius: 5px;
+            color: #333;
+            font-size: 18px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+        .nav-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #fff;
+            color: #667eea;
+        }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .logo {
+                width: 100px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Íàøà øêîëà</h2>
-        <img src="images/school.png" alt="Øêîëüíîå çäàíèå">
-        <p>Ìû - ñîâðåìåííàÿ øêîëà ñ èííîâàöèîííûìè ìåòîäàìè îáó÷åíèÿ. Íàøà ìèññèÿ - ðàñêðûòü ïîòåíöèàë êàæäîãî ó÷åíèêà!</p>
-        <p>Îñíîâàíà â 1995 ãîäó. Áîëåå 1000 ó÷åíèêîâ. 50 êâàëèôèöèðîâàííûõ ïåäàãîãîâ.</p>
-        <a href="index.html" class="back-btn">Íà ãëàâíóþ</a>
+    <img src="images/logo.png" alt="Логотип школы" class="logo">
+    
+    <h1>Школа Будущего</h1>
+
+    <div class="nav-grid">
+        <a href="slide1.html" class="nav-button">О школе</a>
+        <a href="slide2.html" class="nav-button">Учителя</a>
+        <a href="slide3.html" class="nav-button">Расписание</a>
+        <a href="slide4.html" class="nav-button">Кружки</a>
+        <a href="slide5.html" class="nav-button">Мероприятия</a>
+        <a href="slide6.html" class="nav-button">Галерея</a>
+        <a href="slide7.html" class="nav-button">Новости</a>
+        <a href="slide8.html" class="nav-button">Контакты</a>
+        <a href="slide9.html" class="nav-button">Достижения</a>
     </div>
 </body>
 </html>
